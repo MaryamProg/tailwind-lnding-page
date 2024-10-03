@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="input.css" />
+    <title>ToDesktop</title>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <nav class="p-3 flex bg-white justify-between items-center">
+      <a href="#" class="flex gap-2 items-center">
+        <img
+          class="max-h-12 max-w-12 object-cover"
+          src="/images/asset 0.png"
+          alt="logo"
+        />
+        <span class="font-bold text-lg">ToDesktop</span>
+      </a>
+      <div class="hidden md:flex bg-white gap-12">
+        <a
+          href="menu.html"
+          class="font-bold hover:underline hover:text-blue-500"
+          >Pricing</a
+        >
+        <a href="#" class="font-bold hover:underline hover:text-blue-500"
+          >Docs</a
+        >
+        <a href="#" class="font-bold hover:underline hover:text-blue-500"
+          >Changelog</a
+        >
+        <a href="#" class="font-bold hover:underline hover:text-blue-500"
+          >Blog</a
+        >
+        <a href="#" class="font-bold hover:underline hover:text-blue-500"
+          >Login</a
+        >
+      </div>
+      <div
+        class="hidden md:flex gap-2 items-center border px-3 py-2 rounded-md border-gray-600 space-x-1 shadow-sm shadow-gray-300 hover:shadow-gray-600 hover:-translate-y-1"
+      >
+        <img src="/images/asset 1.svg" alt="" />
+        <span>Electron Developers</span>
+      </div>
+
+      <!-- <button class="hamburger gap-1 cursor-pointer md:hidden" onclick="handleMenue()">
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+        </button> -->
+      <button class="p-2 md:hidden" onclick="handleMenue()">
+        <i
+          ><img
+            src="images/icons8-menu-50.png"
+            alt=""
+            style="width: 24px; height: 24px"
+        /></i>
+      </button>
+
+      <div id="nav-dialouge" class=" md:hidden fixed z-10 bg-white inset-0 p-3">
+        <div id="nav-bar" class="flex justify-between">
+          <a href="#" class="flex gap-2 items-center">
+            <img
+              class="max-h-12 max-w-12 object-cover"
+              src="/images/asset 0.png"
+              alt="logo"
+            />
+            <span class="font-bold text-lg">ToDesktop</span>
+          </a>
+          <button class="p-2 md:hidden" onclick="handleMenue()">
+            <i><img class="text-gray-500" src="images/icons8-cross-50.png" alt=""/></i>
+          </button>
+        </div>
+        <div class="mt-8 flex flex-col ">
+          <a
+            href="#" class="font-bold hover:bg-gray-50  m-3 p-3">Pricing</a>
+          <a href="#" class="font-bold  hover:bg-gray-50 m-3 p-3"
+            >Docs</a>
+          <a href="#" class="font-bold  hover:bg-gray-50  m-3 p-3"
+            >Changelog</a>
+          <a href="#" class="font-bold  hover:bg-gray-50  m-3 p-3"
+            >Blog</a >
+          <a href="#" class="font-bold  hover:bg-gray-50  m-3 p-3"
+            >Login</a>
+        </div>
+        <div class="mt-4 h-[1px] bg-gray-300"> </div>
+        <button class="flex gap-2 mt-8">
+            <img src="/images/asset 1.svg" alt="" />
+            <span>Electron Developers</span>
+        </button>
+      </div>
+    </nav>
+    <!----nav bar menue for mini screen-->
+
+    <main>
+      <div
+        id="hero"
+        class="min-h-screen py-8 bg-gradient-to-br from-purple-50 via bg-orange-50 to bg-transparent"
+      >
+        <div
+          id="hero-container"
+          class="hero max-w-4xl mx-auto px-6 pb-32 flex flex-col sm:items-center sm:text-center"
+        >
+          <div
+            id="version-text"
+            class="flex my-6 gap-2 p-2 items-center w-fit rounded-md bg-yellow-100 border border-yellow-300 shadow-sm shadow-yellow-300 hover:shadow-yellow-600"
+          >
+            <div
+              class="w-2 h-2 rounded-full bg-yellow-400 border border-yellow-600"
+            ></div>
+            <p class="font-bold text-yellow-500">
+              v0.2LL: <span class="texty">Find-in-page bug fixes</span>
+            </p>
+          </div>
+          <h1 class="text-4xl font-semibold leading-snug sm:text-6xl">
+            Web app to desktop app in minutes
+          </h1>
+          <p class="py-4 sm:text-2xl sm:mt-8 text-gray-800">
+            Take your web app codebase and transform it into a cross platyform
+            desktop app with native functionality
+          </p>
+          <div id="button" class="mt-12 flex flex-col sm:flex-row gap-4">
+            <button
+              class="py-3 px-3 bg-blue-500 text-white font-medium shadow-sm hover:opacity-50 rounded-lg"
+            >
+              Download now
+            </button>
+            <button
+              class="py-3 px-3 font-medium bg-white rounded-lg border border-gray-400 hover:border-gray-800"
+            >
+              Read docs
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="comapnies-container"
+          class="flex flex-col gap-8 overflow-x-hidden"
+        >
+          <div id="company-bar" class="flex justify-center gap-2 pb-3">
+            <img class="translate-y-2" src="/images/asset 2.svg" alt="" />
+            <span class="font-medium">APPS POWERED BY TODESKTOP</span>
+            <img
+              class="translate-y-2 -scale-x-100"
+              src="/images/asset 2.svg"
+              alt=""
+            />
+          </div>
+          <div id="companies-list overflow-x-hidden">
+            <div id="line1" class="flex gap-5 -translate-x-48 p-4">
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 3.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 4.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 5.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 6.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 7.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 8.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 9.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 10.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 11.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 12.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 13.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 14.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 15.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 16.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 17.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 18.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+            </div>
+            <div id="line2" class="flex gap-5 p-4 translate-x-86">
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 19.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 20.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 21.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 22.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 23.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 24.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 25.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 26.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 27.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 28.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 29.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 3.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 4.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 5.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 6.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 7.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 8.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+            </div>
+            <div id="line3" class="flex gap-5 p-4 -translate-x-48 lg:hidden">
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 9.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 10.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 11.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 12.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 13.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 14.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 15.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 16.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 17.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 18.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 19.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 20.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 21.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 22.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 23.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 24.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 25.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 26.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 27.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+              <div
+                class="flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-300"
+              >
+                <img
+                  class="w-12 h-12 md:w-16 md:h-16"
+                  src="/images/asset 28.png"
+                  alt=""
+                />
+                <span class="text-[12px] md:text-[16px] font-semibold"
+                  >Unbounce</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--details-->
+      <div
+        id="bento-grid"
+        class="px-6 py-12 max-w-7xl mx-auto lg:px-8 lg:mt-12"
+      >
+        <h2 class="text-5xl sm:font-semibold mb-14">
+          To Desktop handels the details
+        </h2>
+        <div
+          id="grid-container"
+          class="flex flex-col gap-6 lg:grid lg:grid-cols-3"
+          styles="grid-auto-rows:96px;"
+        >
+          <div
+            class="row-start-1 row-end-3 rounded-2xl gap-4 p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+          >
+            <div
+              class="bg-white rounded-2xl w-full h-full p-6 flex flex-col items-center hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+            >
+              <h3 class="text-2xl font-medium">Native Notifications</h3>
+              <img src="images/asset 37.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="row-start-1 row-end-4 rounded-2xl gap-4 p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+          >
+            <div
+              class="bg-white rounded-2xl w-full h-full p-6 flex flex-col items-center hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+            >
+              <h3 class="text-2xl font-medium">Native Notifications</h3>
+              <p class="text-lg text-center font-light">
+                We'ii ensure the undeerlying browser is uptodate and deliver
+                peerformance improvements, security patches & additional
+                features.
+              </p>
+              <img src="images/asset 38.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="row-start-1 row-end-3 rounded-2xl gap-4 p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+          >
+            <div
+              class="bg-white rounded-2xl w-full h-full p-6 flex flex-col items-center hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+            >
+              <h3 class="text-2xl font-medium">Native Notifications</h3>
+              <img src="images/asset 39.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="row-start-3 row-end-6 rounded-2xl gap-4 p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+          >
+            <div
+              class="bg-white rounded-2xl w-full h-full p-6 flex flex-col items-center hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+            >
+              <h3 class="text-2xl font-medium">Native Notifications</h3>
+              <p class="text-lg text-center font-light">
+                We'ii ensure the undeerlying browser is uptodate and deliver
+                peerformance improvements, security patches & additional
+                features.
+              </p>
+              <img src="images/asset 40.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="row-start-4 row-end-6 rounded-2xl gap-4 p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+          >
+            <div
+              class="bg-white rounded-2xl w-full h-full p-6 flex flex-col items-center hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+            >
+              <h3 class="text-2xl font-medium">Native Notifications</h3>
+              <img src="images/asset 41.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="row-start-3 row-end-6 rounded-2xl gap-4 p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+          >
+            <div
+              class="bg-white rounded-2xl w-full h-full p-6 flex flex-col items-center hover:bg-gradient-to-br hover:from-red-100 hover:via-purple-100 hover:to-yellow-100"
+            >
+              <h3 class="text-2xl font-medium">Native Notifications</h3>
+              <p class="text-lg text-center font-light">
+                We'ii ensure the undeerlying browser is uptodate and deliver
+                peerformance improvements, security patches & additional
+                features.
+              </p>
+              <img src="images/asset 43.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--pricing section-->
+      <div class="pricing px-6 py-12 max-w-7xl mx-auto lg:px-8 lg:mt-12">
+        <h2 class="text-5xl sm:font-semibold mb-14 leading-normal max-w-2xl">
+          Choose a plane that fits your needs
+        </h2>
+        <div class="flex flex-col lg:flex-row mt-6 gap-5">
+          <div
+            class="border rounded-xl lg:border-none lg:bg-slate-50 px-8 pb-8 pt-12 flex flex-col gap-6"
+          >
+            <h3 class="text-4xl font-medium">Free</h3>
+            <p class="text-lg font-light">
+              for personal use or testing before deploynment
+            </p>
+            <p class="uppercase text-2xl font-medium text-gray-800">
+              key features
+            </p>
+            <ul class="space-y-3">
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+            </ul>
+            <button
+              class="border rounded-lg px-8 py-3 text-blue-800 font-medium hover:border-gray-800"
+            >
+              Read Docs
+            </button>
+          </div>
+          <div
+            class="border rounded-xl lg:border-none lg:bg-slate-50 px-8 pb-8 pt-12 flex flex-col gap-6"
+          >
+            <h3 class="text-4xl font-medium">Essential</h3>
+            <p class="text-lg font-light">
+              for personal use or testing before deploynment
+            </p>
+            <p class="uppercase text-2xl font-medium text-gray-800">
+              key features
+            </p>
+            <ul class="space-y-3">
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+            </ul>
+            <button
+              class="border rounded-lg px-8 py-3 text-blue-800 font-medium hover:border-gray-800"
+            >
+              Read Docs
+            </button>
+          </div>
+          <div
+            class="relative border rounded-xl lg:border-none lg:bg-slate-50 px-8 pb-8 pt-12 flex flex-col gap-6"
+          >
+            <p
+              class="text-blue-800 border rounded-full bg-indigo-100 w-fit px-2 py-1 font-semibold absolute top-0 right-8 -translate-y-1/2"
+            >
+              Most Popular
+            </p>
+            <h3 class="text-4xl font-medium">Professional</h3>
+            <p class="text-lg font-light">
+              for personal use or testing before deploynment
+            </p>
+            <p class="uppercase text-2xl font-medium text-gray-800">
+              key features
+            </p>
+            <ul class="space-y-3">
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+              <li>
+                <span class="text-lg font-light">free for personal use</span>
+              </li>
+            </ul>
+            <button
+              class="border rounded-lg px-8 py-3 text-white font-medium bg-blue-800 hover:bg-opacity-80"
+            >
+              Read Docs
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fotter px-6 py-8 max-w-7xl mx-auto lg:px-8 lg:mt-12 flex flex-col lg:flex-row-reverse items-center gap-8 bg-indigo-50 border rounded-lg mb-12"
+      >
+        <a href="" class="font-light">Documentation</a>
+        <div class="flex gap-4">
+          <img class="w-4 h-4" src="/images/github-mark.png" alt="" />
+          <img class="w-4 h-4" src="/images/icons8-twitter-50.png" alt="" />
+        </div>
+        <a href="#" class="flex gap-2 items-center flex-1">
+          <img
+            class="max-h-12 max-w-12 object-cover"
+            src="/images/asset 0.png"
+            alt="logo"
+          />
+          <span class="font-bold text-lg">ToDesktop</span>
+        </a>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
